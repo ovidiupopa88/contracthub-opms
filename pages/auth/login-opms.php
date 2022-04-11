@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login to ContractHub</title>
+    <title>ContractHub Login</title>
 
     <!-- GLOBAL STYLES -->
     <!-- Bootstrap 3.3.6 -->
@@ -43,24 +43,24 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-banner text-center">
-                    <h1><i class="fa fa-gears"></i> Flex Admin</h1>
+                    <h1><i class="fa fa-gears"></i> ContractHub OPMS</h1>
                 </div>
+                <hr>
+                <div class="clearfix"></div>
                 <div class="portlet portlet-green">
                     <div class="portlet-heading login-heading">
                         <div class="portlet-title">
-                            <h4><strong>Login to Flex Admin!</strong>
+                            <h4><strong>Log in to the portal</strong>
                             </h4>
                         </div>
-                        <div class="portlet-widgets">
-                            <button class="btn btn-white btn-xs"><i class="fa fa-plus-circle"></i> New User</button>
-                        </div>
                         <div class="clearfix"></div>
+                        
                     </div>
                     <div class="portlet-body">
-                        <form accept-charset="UTF-8" role="form">
+                        <form accept-charset="UTF-8" role="form" action="../auth/login-handler.php" method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
+                                    <input class="form-control" placeholder="username" name="username" type="text">
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
@@ -71,18 +71,20 @@
                                     </label>
                                 </div>
                                 <br>
-                                <a href="../../pages/dashboard" class="btn btn-lg btn-green btn-block">Sign In</a>
-                                <hr>
-                                <a class="btn btn-block btn-social btn-facebook">
+                                <button type=submit name="login_opms_user" class="btn btn-lg btn-green btn-block">Sign In</button>
+                                
+
+                                <!-- <a class="btn btn-block btn-social btn-facebook">
                                   <i class="fa fa-facebook"></i> Sign in with Facebook
-                                </a>
+                                </a>-->
                                 <!-- <a class="btn btn-block btn-social btn-twitter">
                                   <i class="fa fa-twitter"></i> Sign in with Twitter
                                 </a> -->
-                                <a class="btn btn-block btn-social btn-google-plus">
+                                <!-- <a class="btn btn-block btn-social btn-google-plus">
                                   <i class="fa fa-google-plus"></i> Sign in with Google
-                                </a>
+                                </a>-->
                             </fieldset>
+                            <hr>
                             <br>
                             <p class="small">
                                 <a href="#">Forgot your password?</a>
