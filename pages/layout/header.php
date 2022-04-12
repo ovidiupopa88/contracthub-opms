@@ -30,7 +30,7 @@
   <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
-    $.widget.bridge('uibutton', $.ui.button);
+    //$.widget.bridge('uibutton', $.ui.button);
   </script>
 
   <!-- Bootstrap 3.3.6 -->
