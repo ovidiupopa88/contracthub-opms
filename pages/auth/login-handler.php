@@ -41,9 +41,15 @@ if (isset($_POST['login_opms_user'])) {
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
             $row = mysqli_fetch_row($results);
-            $full_name = $row[5];
+            
             $_SESSION['username'] = $opms_username;
+            $full_name = $row[5];
             $_SESSION['fullname'] = $full_name;
+            $role = $row[4];
+            $_SESSION['role'] = $role;
+            $joined = $row[6];
+            $_SESSION['joined'] = $joined;
+
             $_SESSION['success'] = "You are now logged in";
             $_SESSION['loggedin'] = true;
             header('location: ../opms/index.php');

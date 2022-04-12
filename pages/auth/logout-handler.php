@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-$_SESSION['username'] = null;
 unset ($_SESSION['username']);
-$_SESSION['fullname'] = null;
 unset ($_SESSION['username']);
-$_SESSION['success'] = null;
 unset ($_SESSION['username']);
+unset ($_SESSION['role']);
+unset ($_SESSION['joined']);
 
 $_SESSION['loggedin'] = false;
 
