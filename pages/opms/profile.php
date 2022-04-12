@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  $active_menu = "settings";
+  $active_menu = "profile";
   include_once "../layout/header.php";
 
   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -28,18 +28,18 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Settings 
+          Profile 
         </h1>
         <ol class="breadcrumb">
-          <li><a href="."><i class="fa fa-cog"></i> General</a></li>
-          <li class="active">Settings</li>
+          <li><a href="."><i class="fa fa-user"></i> Account</a></li>
+          <li class="active">Profile</li>
         </ol>
       </section>
 
       <!-- Main content -->
       <section class="content">
 
-        <?php include_once("content/content-settings.php") ?>
+        <?php include_once("content/content-profile.php") ?>
         
       </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
