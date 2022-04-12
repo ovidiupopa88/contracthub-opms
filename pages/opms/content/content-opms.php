@@ -19,7 +19,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">Positions</span>
-              <span class="info-box-number">49e</span>
+              <span class="info-box-number">490</span>
             </div>
             <!-- /.info-box-content -->
           </div>

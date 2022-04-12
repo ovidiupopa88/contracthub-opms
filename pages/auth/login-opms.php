@@ -1,8 +1,10 @@
+<?php include('./login-handler.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -57,7 +59,8 @@
                         
                     </div>
                     <div class="portlet-body">
-                        <form accept-charset="UTF-8" role="form" action="../auth/login-handler.php" method="post">
+                        <form accept-charset="UTF-8" role="form" action="../auth/login-opms.php" method="post">
+                        <?php include('./server/errors.php') ?>
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="username" name="username" type="text">

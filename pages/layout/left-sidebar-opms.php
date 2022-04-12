@@ -36,53 +36,53 @@
       <ul class="sidebar-menu">
         <li class="header">MENU</li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/opms/">
+        <li <?php isActive("home") ?>>
+          <a href="../opms/">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/positions/">
+        <li <?php isActive("positions") ?>>
+          <a href="./positions.php">
             <i class="fa fa-briefcase"></i> <span>Positions</span>
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/candidates/">
-            <i class="fa fa-user"></i> <span>Candidates</span>
+        <li <?php isActive("candidates") ?>>
+          <a href="./candidates.php">
+            <i class="fa fa-users"></i> <span>Candidates</span>
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/interviews/">
+        <li <?php isActive("interviews") ?>>
+          <a href="./interviews.php">
             <i class="fa fa-calendar"></i> <span>Interviews</span>
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/clients/">
-            <i class="fa fa-users"></i> <span>Clients</span>
+        <li <?php isActive("clients") ?>>
+          <a href="./clients.php">
+            <i class="fa fa-user"></i> <span>Clients</span>
           </a>
         </li>
 
         <li class="header">General</li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/settings/">
+        <li <?php isActive("settings") ?>>
+          <a href="./settings.php">
             <i class="fa fa-gear"></i> <span>Settings</span>
           </a>
         </li>
 
         <li <?php isActive("documentation") ?>>
-          <a href="../../pages/documentation/documentation.php">
+          <a href="./documentation.php">
             <i class="fa fa-book"></i> 
             <span>Documentation</span>
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="/opms.php/pages/help/">
+        <li <?php isActive("help") ?>>
+          <a href="./help.php">
             <i class="fa fa-question-circle"></i> <span>Help</span>
           </a>
         </li>
