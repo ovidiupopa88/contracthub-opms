@@ -1,25 +1,13 @@
 <?php
 session_start();
 
-// *** CONFIG *** //
-// Database
-$dbhost = "localhost";
-$dbuser = "contracthubdb";
-$dbpass = "chadmin333@";
-$dbname = "contracthubdb";
-// Users
-$users_opms_table = "users_opms";
-$users_contracthub_table = "users_contracthub";
-$users_admin_table = "users_admin";
-
+require_once('server/config.php');
 
 // initializing variables
 $opms_username = "";
 $opms_email    = "";
 $opms_fullname = "";
 $errors = array();
-// connect to the database
-$db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 // LOGIN OPMS USER
 if (isset($_POST['login_opms_user'])) {

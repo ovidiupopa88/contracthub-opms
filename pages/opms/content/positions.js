@@ -7,6 +7,9 @@ $(function () {
       "searching": false,
       "ordering": true,
       "info": true,
-      "autoWidth": false
+      "autoWidth": false,
+      "processing": true,
+      "serverSide": true,
+      "ajax": "../server_side/positions_processing.php"
     });
   });
