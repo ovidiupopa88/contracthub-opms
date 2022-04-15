@@ -1,4 +1,4 @@
-<script src="content/positions.js"></script>
+
 <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -38,6 +38,15 @@
                 </tr>
                 </tfoot>
               </table>
+              <script>
+                jQuery(document).ready(function($) {
+                $('#positions').DataTable( {
+                "processing": true,
+                "serverSide": true,
+                "ajax": "./server_side/positions_processing.php"
+                } );
+                } );
+              </script>
             </div>
             <!-- /.box-body -->
           </div>
